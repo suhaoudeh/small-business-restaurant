@@ -47,3 +47,8 @@ iframe {
     height: 400px;
     border: 0;
 }
+.logo {
+    width: 100px; /* Adjust size as needed */
+    height: auto;
+    margin-bottom: 10px;
+}
