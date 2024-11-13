@@ -52,3 +52,61 @@ iframe {
     height: auto;
     margin-bottom: 10px;
 }
+nav ul {
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    padding: 0;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Main menu styling */
+main {
+    padding: 20px;
+    text-align: center;
+    background-color: #ffffff; /* White background */
+}
+
+main h2 {
+    font-family: 'Georgia', serif; /* Fancy font for the heading */
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+main ul {
+    list-style: none;
+    padding: 0;
+}
+
+main ul li {
+    font-family: 'Times New Roman', serif; /* Fancy font for menu items */
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 20px; /* Space between items */
+    line-height: 1.5; /* Increases space between lines */
+}
+
+/* Add more space around each menu item */
+main ul li a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main ul li a:hover {
+    color: #8b0000; /* Dark red on hover */
+}
