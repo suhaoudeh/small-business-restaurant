@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Middle Eastern Restaurant</title>
+    <link rel="stylesheet" href="styles1.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <!-- Include navigation bar -->
+    <div id="header"></div>
+    <script>
+        $(function(){
+            $("#header").load("header.html");
+        });
+    </script>
+<br>
+<p class="styled-paragraph">Welcome to our Middle Eastern Restaurant!
+     We are dedicated to bringing you the finest flavors from the
+ Middle East, prepared with the freshest ingredients and
+ traditional recipes. Enjoy a culinary journey like no other!</p>
+     
+        <!-- Right Content Section -->
+       <center><div class="content-section">
+            <!-- Your content here -->       
+            <!-- Menu Container -->
+            <div class="menu-container">
+                <!-- Menu Table 1 -->
+                <div class="menu-table-wrapper">
+                    <h2>Appetizers</h2>
+                    <table class="menu-table">
+                        <thead>
+                            <tr>
+                                <th>Dish Name</th>
+                                <th>Price</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Hummus</td>
+                                <td>$5.99</td>
+                            </tr>
+                            <tr>
+                                <td>Moutabal</td>
+                                <td>$6.99</td>
+                            </tr>
+                            <tr>
+                                <td>Labneh</td>
+                                <td>$5.99</td>
+                            </tr>
+                            <tr>
+                                <td> Salad </td>
+                                <td>$4.99</td>
+                            </tr>
+                            <tr>
+                                <td> Fattoush </td>
+                                <td>$5.99</td>
+                            </tr>
+                            <tr>
+                                <td>Falafel</td>
+                                <td>$7.99</td>
+                            </tr>
+                            <tr>
+                                <td>Tabbouleh</td>
+                                <td>$6.99</td>
+                            </tr>
+                            <tr>
+                                <td>Baba Ganoush</td>
+                                <td>$6.99</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- Menu Table 2 -->
+                <div class="menu-table-wrapper">
+                    <h2>Main Courses</h2>
+                    <table class="menu-table">
+                        <thead>
+                            <tr>
+                                <th>Dish Name</th>
+                                <th>Price</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Shawarma</td>
+                                <td>$9.99</td>
+                            </tr>
+                            <tr>
+                                <td>Falafel Wrap</td>
+                                <td>$8.99</td>
+
+                            </tr>
+                            <tr>
+                                <td>Chicken Shawarma Wrap</td>
+                                <td>$10.99</td>
+                            </tr>
+                            <tr>
+                                <td>Beef Shawarma Wrap</td>
+                                <td>$11.99</td>
+                            </tr>
+                            <tr>
+                                <td>Grilled Chicken</td>
+                                <td>$12.99</td>
+                            </tr>
+                            <tr>
+                                <td>Lamb Kebabs</td>
+                                <td>$14.99</td>
+                            </tr>
+                            <tr>
+                                <td>Beef Kebabs</td>
+                                <td>$13.99</td>
+                            </tr>
+                            <tr>
+                                <td>Vegetarian Platter</td>
+                                <td>$15.99</td>
+                            </tr>
+                            <tr>
+                                <td>Meat Platter</td>
+                                <td>$17.99</td>
+                            </tr>
+                           
+                            <tr>
+                                <td>Mixed Grill</td>
+                                <td>$19.99</td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+                <div class="menu-table-wrapper">
+                    <h2>Drinks </h2>
+                    <table class="menu-table">
+                        <thead>
+                            <tr>
+                                <th>Dish Name</th>
+                                <th>Price</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Soft Drinks</td>
+                                <td>$1.99</td>
+                            </tr>
+                            <tr>
+                                <td>Water</td>
+                                <td>$1.99</td>
+                            </tr>
+                            <tr>
+                                <td>Tea</td>
+                                <td>$2.99</td>
+                            </tr>
+                            <tr>
+                                <td>Coffee</td>
+                                <td>$2.99</td>
+                            </tr>
+                            <tr>
+                                <td>Arabic Coffee</td>
+                                <td>$3.99</td>
+                            </tr>
+                            <tr>
+                                <td>Smoothies</td>
+                                <td>$4.99</td>
+                            </tr>
+                            <tr>
+                                <td>Mocktails</td>
+                                <td>$5.99</td>
+                            </tr>
+                            <tr>
+                                <td>Shakes</td>
+                                <td>$6.99</td>
+                            </tr>
+                        </tbody>
+                        </table>
+                    
+                </div>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</center>
+    <!-- Include footer -->
+    <div id="footer"></div>
+    <script>
+        $(function(){
+            $("#footer").load("footer.html");
+        });
+
+        // Highlight the active menu item
+        $(document).ready(function() {
+            var currentPath = window.location.pathname.split("/").pop();
+            if (currentPath === "") {
+                currentPath = "index.html";
+            }
+            $("nav ul li a").each(function() {
+                var href = $(this).attr('href');
+                if (href === currentPath) {
+                    $(this).addClass('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

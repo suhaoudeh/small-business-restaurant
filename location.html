@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Middle Eastern Restaurant</title>
+<link rel="stylesheet" href='styles1.css'>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</head>
+<body>
+    <!-- Include navigation bar -->
+    <div id="header"></div>
+    <script>
+        $(function(){
+            $("#header").load("header.html");
+        });
+    </script>
+
+    <div class="address-section">
+        <h2>Our Location</h2>
+        <p>4500 Ridgeway Dr, Mississauga, ON L5M 7N4</p>
+     </div>
+        <p class="styled-paragraph"> Welcome to Middle Eastren Restaurant, conveniently located in the heart of 
+            Mississauga. Nestled in a vibrant neighborhood, our restaurant is easily accessible and
+        offers a warm, inviting atmosphere for dining with family and friends. Whether you’re stopping by for a quick bite or a
+        leisurely meal, our location provides
+        the perfect setting to enjoy the authentic flavors of the Middle East. Parking and public transport options are readily available, ensuring a hassle-free visit. Come 
+        and experience a taste of tradition right here at  Middle Eastren Restaurant!
+       </p>
+    <div class="map-container">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2886.513907365432!2d-79.7125396845018!3d43.54854897912407!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b3d8b5b5b5b5b%3A0x5b5b5b5b5b5b5b5b!2s4500%20Ridgeway%20Dr%2C%20Mississauga%2C%20ON%20L5M%207N4%2C%20Canada!5e0!3m2!1sen!2sus!4v1634567890123!5m2!1sen!2sus"
+            width="600"
+            height="450"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy">
+        </iframe>
+
+    <div id="footer"></div>
+    <script>
+        $(function(){
+            $("#footer").load("footer.html");
+        });
+    </script>
+    
+</body>
+</html>

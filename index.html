@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Middle Eastern Restaurant</title>
+<link rel="stylesheet" href='styles1.css'>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</head>
+<body>
+    <!-- Include navigation bar -->
+    <div id="header"></div>
+    <script>
+        $(function(){
+            $("#header").load("header.html");
+        });
+    </script>
+
+    <main>
+        <h2>Our Specialties</h2>
+        <p>We offer a range of delicious, authentic dishes made with fresh ingredients and traditional recipes.</p>
+    </main>
+
+    <div class="container">
+        <!-- Left Image Section -->
+        <div class="image-section">
+            <img src="mainphoto.jpg" alt="Restaurant Interior">
+        </div>
+
+        <!-- Right Content Section -->
+        <div class="content-section">
+            <h2>Welcome</h2>
+            <h1>Welcome to Middle East Restaurant</h1>
+            <p>Visit us for a unique home-style dining experience!</p>
+            <a href="menu.html" class="menu-button">Menu</a>
+        </div>
+    </div>
+    <p class=" styled-paragraph">
+    <b> Middle Eastern Food</b> <br><br>
+
+    Middle Eastern Food Restaurant is a vibrant and diverse culinary tradition that reflects the rich history and Arabic cultural heritage of the region. Spanning countries such as Lebanon, Jordan, Syria, Iraq, Egypt, and others, Middle Eastern food offers a tantalizing blend of flavors, aromas, and textures. Known for its use of fresh ingredients, aromatic spices, and unique cooking techniques, this cuisine is both wholesome and satisfying.
+
+Staples like hummus, falafel, and shawarma have gained international popularity, but the region’s culinary offerings extend far beyond these dishes. Grilled meats, hearty stews, fresh salads, and savory pastries are just some of the delights that Middle Eastern food offers. Olive oil, chickpeas, tahini, and a variety of spices like sumac, cumin, and za’atar are often featured, giving the cuisine its distinctive flavor profile.
+
+Middle Eastern food is also deeply rooted in hospitality and tradition. Meals are often shared among family and friends, creating a communal dining experience that emphasizes connection and togetherness. Whether you're savoring a warm bowl of lentil soup, enjoying a platter of mezze, or indulging in sweet desserts like baklava, Middle Eastern cuisine is a journey into the heart of the region’s culture and history.
+
+Perfect for any occasion, Middle Eastern food is a testament to the art of balancing health, flavor, and tradition, making it a cherished part of global culinary heritage.
+    </p>
+    <div id="footer"></div>
+    <script>
+        $(function(){
+            $("#footer").load("footer.html");
+        });
+    
+        // Highlight the active menu item
+        $(document).ready(function() {
+            var currentPath = window.location.pathname.split("/").pop();
+            if (currentPath === "") {
+                currentPath = "index.html";
+            }
+            $("nav ul li a").each(function() {
+                var href = $(this).attr('href');
+                if (href === currentPath) {
+                    $(this).addClass('active');
+                }
+            });
+        });
+    </script>
+    
+</body>
+</html>

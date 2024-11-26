@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Middle Eastern Restaurant</title>
+<link rel="stylesheet" href='styles1.css'>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</head>
+<body>
+<div id="header"></div>
+    <script>
+        $(function(){
+            $("#header").load("header.html");
+        });
+    </script>
+<br> <br> 
+<p align=" center" style="color: rgb(100, 98, 96);">
+    Please feel free to fill-up the form and will get beck to you as soon as possible.
+</p>
+    <form class="contact-form">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="telephone">Telephone:</label>
+        <input type="tel" id="telephone" name="telephone" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit">Submit</button>
+    </form>
+    <!-- Store Information -->
+    <div class="store-info">
+        <h3>Get in touch with us </h3>
+        <p>Email: <a href="mailto:Suha.oudeh@hotmail.com">Suha.oudeh@hotmail.com <b> Or</b>  info@middleastfood.com</a></p>
+        <p>Phone: <a href="tel:9055555555">905-555-5555 <b> Or</b> (905) 2222-0000 </a></p>
+        
+        <div class="social-media">
+            <a href="https://www.facebook.com" target="_blank"><img src="facebook-icon.png" alt="Facebook"></a>
+            <a href="https://www.instagram.com" target="_blank"><img src="instagram-icon.jpg" alt="Instagram"></a>
+        </div>
+    <br>
+    <div id="footer"></div>
+<script>
+    $(function(){
+        $("#footer").load("footer.html");
+    });
+
+
+
+    document.addEventListener("DOMContentLoaded", function () {
+    const currentPage = window.location.pathname.split("/").pop();
+    const menuItems = document.querySelectorAll(".navbar li a");
+    menuItems.forEach(item => {
+        if (item.getAttribute("href") === currentPage) {
+        item.parentElement.classList.add("active");
+        }
+    });
+    });
+</script>
+
+    </body>
+</html>
