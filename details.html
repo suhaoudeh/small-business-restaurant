@@ -198,7 +198,7 @@
             if (currentPath === "") {
                 currentPath = "details.html";
             }
-            $("nav ul li a").each(function() {
+            $("nav li a").each(function() {
                 var href = $(this).attr('href');
                 if (href === currentPath) {
                     $(this).addClass('active');
